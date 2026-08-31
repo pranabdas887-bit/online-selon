@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Ristana's Family Salon & Academy — premium beauty, hair and grooming services in Assam.">
+<title>Ristana's Family Salon & Academy</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{--ink:#171318;--muted:#756d75;--cream:#f7f1eb;--rose:#d99a9b;--rose2:#f0c9c4;--gold:#c6a36a;--white:#fff;--shadow:0 24px 70px rgba(42,24,32,.14)}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;overflow-x:hidden}
+a{text-decoration:none;color:inherit}.nav{position:fixed;z-index:20;top:18px;left:50%;transform:translateX(-50%);width:min(1120px,92%);padding:12px 16px 12px 22px;border:1px solid rgba(255,255,255,.5);background:rgba(255,255,255,.72);backdrop-filter:blur(18px);border-radius:999px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 10px 35px rgba(50,20,30,.08)}
+.brand{font-family:"Playfair Display";font-weight:700;font-size:18px}.brand span{color:#ad6d70}.links{display:flex;gap:25px;font-size:13px;font-weight:600}.cta{background:var(--ink);color:white;padding:12px 18px;border-radius:999px;font-size:13px}
+.hero{min-height:100vh;display:grid;place-items:center;padding:125px 6% 70px;position:relative;overflow:hidden;background:radial-gradient(circle at 15% 25%,#fff 0 18%,transparent 38%),linear-gradient(135deg,#f7efe8,#ead5d0 48%,#f8f3ef)}
+.hero:before{content:"";position:absolute;width:520px;height:520px;border-radius:50%;right:-160px;top:80px;background:linear-gradient(145deg,rgba(255,255,255,.8),rgba(217,154,155,.2));filter:blur(1px);box-shadow:inset 30px 30px 70px rgba(255,255,255,.8),30px 40px 100px rgba(90,40,50,.12);transform:rotate(12deg)}
+.hero-grid{width:min(1180px,100%);display:grid;grid-template-columns:1.02fr .98fr;gap:55px;align-items:center;position:relative;z-index:2}.eyebrow{display:inline-flex;gap:8px;align-items:center;color:#9b6769;font-weight:700;letter-spacing:.16em;text-transform:uppercase;font-size:11px}.eyebrow i{width:28px;height:1px;background:var(--gold)}
+h1{font-family:"Playfair Display";font-size:clamp(55px,7vw,96px);line-height:.94;margin:18px 0 25px;letter-spacing:-.045em}h1 em{font-weight:500;color:#b66f72}.lead{max-width:560px;color:var(--muted);font-size:17px;line-height:1.75}.hero-actions{display:flex;gap:12px;margin-top:30px;flex-wrap:wrap}.btn{padding:15px 22px;border-radius:999px;font-weight:700;font-size:14px;display:inline-flex;align-items:center;gap:9px}.btn-dark{background:var(--ink);color:white;box-shadow:0 14px 28px rgba(20,10,16,.18)}.btn-light{border:1px solid #d7c6c0;background:rgba(255,255,255,.55)}
+.visual{height:620px;position:relative;perspective:1200px}.portrait{position:absolute;inset:35px 25px 0 70px;border-radius:180px 180px 30px 30px;overflow:hidden;transform:rotateY(-8deg) rotateX(3deg);box-shadow:35px 45px 70px rgba(58,30,37,.25);border:9px solid rgba(255,255,255,.65)}.portrait img{width:100%;height:100%;object-fit:cover;filter:saturate(.86) contrast(1.03)}.float-card{position:absolute;right:-5px;top:80px;width:205px;padding:18px;background:rgba(255,255,255,.82);backdrop-filter:blur(18px);border-radius:22px;box-shadow:var(--shadow);transform:rotate(5deg)}.float-card b{font-family:"Playfair Display";font-size:31px}.float-card small{display:block;color:var(--muted);line-height:1.45;margin-top:4px}.badge{position:absolute;bottom:48px;left:0;background:var(--ink);color:white;border-radius:50%;width:125px;height:125px;display:grid;place-items:center;text-align:center;font-size:12px;line-height:1.35;box-shadow:0 25px 50px rgba(30,10,20,.22);transform:rotate(-10deg)}.badge strong{display:block;color:#f1c7c2;font-size:20px}
+section{padding:110px 6%}.wrap{width:min(1120px,100%);margin:auto}.section-head{display:flex;justify-content:space-between;gap:30px;align-items:end;margin-bottom:45px}.kicker{color:#a36c6e;text-transform:uppercase;letter-spacing:.16em;font-size:11px;font-weight:800}.section-head h2{font-family:"Playfair Display";font-size:clamp(38px,5vw,62px);line-height:1;margin:8px 0 0;letter-spacing:-.03em}.section-head p{max-width:420px;color:var(--muted);line-height:1.7}
+.services{background:#fff}.cards{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.card{min-height:270px;border-radius:26px;padding:28px;background:linear-gradient(145deg,#fff,#f6eee9);border:1px solid #eadfd8;transition:.35s;position:relative;overflow:hidden}.card:hover{transform:translateY(-9px) rotateX(2deg);box-shadow:var(--shadow)}.num{font-size:12px;color:#b88888}.card h3{font-family:"Playfair Display";font-size:25px;margin:70px 0 10px}.card p{color:var(--muted);font-size:13px;line-height:1.65}.circle{position:absolute;width:115px;height:115px;border-radius:50%;right:-35px;top:-35px;background:#eed1cc;box-shadow:inset 10px 10px 30px rgba(255,255,255,.8)}
+.experience{background:var(--ink);color:white}.experience .section-head p{color:#bdb4b9}.experience-grid{display:grid;grid-template-columns:1fr 1fr;gap:30px}.experience-card{border-radius:30px;overflow:hidden;position:relative;min-height:500px}.experience-card img{width:100%;height:100%;object-fit:cover}.experience-card:after{content:"";position:absolute;inset:45% 0 0;background:linear-gradient(transparent,rgba(15,10,14,.85))}.exp-copy{position:absolute;z-index:2;bottom:30px;left:30px;right:30px}.exp-copy h3{font-family:"Playfair Display";font-size:34px;margin:0 0 8px}.exp-copy p{margin:0;color:#e6dde0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:18px}.stat{border:1px solid #40373d;border-radius:26px;padding:30px;display:flex;flex-direction:column;justify-content:end;background:linear-gradient(145deg,#211b20,#171216);min-height:240px}.stat strong{font-family:"Playfair Display";font-size:56px;color:#f0c9c4}.stat span{color:#aaa0a6;margin-top:5px}.academy{background:linear-gradient(120deg,#f5e8e2,#fff9f5)}.academy-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px;align-items:center}.academy-photo{height:560px;border-radius:220px 220px 28px 28px;overflow:hidden;box-shadow:var(--shadow);transform:rotate(-3deg)}.academy-photo img{width:100%;height:100%;object-fit:cover}.academy h2{font-family:"Playfair Display";font-size:clamp(45px,5vw,68px);line-height:1;margin:10px 0 20px}.check{display:flex;gap:12px;margin:18px 0;color:#5e565c}.check b{display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:#d9a0a0;color:white;font-size:12px}
+.contact{background:#fff}.contact-box{border-radius:36px;padding:55px;display:grid;grid-template-columns:1fr 1fr;gap:40px;background:linear-gradient(135deg,#20191e,#3b2c31);color:white;box-shadow:var(--shadow)}.contact h2{font-family:"Playfair Display";font-size:55px;line-height:1;margin:0 0 18px}.contact p{color:#c9c0c4;line-height:1.7}.info{display:grid;gap:13px;margin-top:25px}.info a{color:#f1c8c5}.contact-form{background:rgba(255,255,255,.07);padding:26px;border-radius:25px}.contact-form input,.contact-form textarea{width:100%;border:1px solid #5b4b52;background:rgba(255,255,255,.04);color:white;border-radius:14px;padding:14px;margin-bottom:12px;font:inherit;outline:none}.contact-form textarea{height:110px;resize:vertical}.contact-form button{width:100%;border:0;cursor:pointer}
+footer{padding:30px 6%;background:#120e12;color:#92888f;font-size:12px}.footer-wrap{width:min(1120px,100%);margin:auto;display:flex;justify-content:space-between;gap:20px}
+.reveal{opacity:0;transform:translateY(28px);transition:.8s ease}.reveal.show{opacity:1;transform:none}
+@media(max-width:900px){.links{display:none}.hero-grid,.academy-grid,.contact-box,.experience-grid{grid-template-columns:1fr}.visual{height:530px}.portrait{inset:20px 20px 0 20px}.float-card{right:0}.cards{grid-template-columns:1fr 1fr}.section-head{display:block}.section-head p{margin-top:20px}.academy-photo{height:480px}.contact h2{font-size:44px}}
+@media(max-width:560px){section{padding:80px 5%}.hero{padding:120px 5% 50px}h1{font-size:57px}.cards{grid-template-columns:1fr}.visual{height:430px}.badge{width:100px;height:100px;font-size:10px}.float-card{width:170px}.contact-box{padding:30px}.footer-wrap{display:block}.footer-wrap span{display:block;margin-top:8px}}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <a class="brand" href="#">Ristana's <span>Salon</span></a>
+  <div class="links"><a href="#services">Services</a><a href="#experience">Experience</a><a href="#academy">Academy</a><a href="#contact">Contact</a></div>
+  <a class="cta" href="tel:+917002837300">Book Now</a>
+</nav>
+
+<header class="hero">
+ <div class="hero-grid">
+  <div>
+   <div class="eyebrow"><i></i> Beauty • Hair • Academy</div>
+   <h1>Where your<br><em>best look</em><br>begins.</h1>
+   <p class="lead">A modern family salon experience designed around confidence, care and effortless style — from everyday grooming to your most important occasions.</p>
+   <div class="hero-actions"><a class="btn btn-dark" href="tel:+917002837300">Book an Appointment ↗</a><a class="btn btn-light" href="#services">Explore Services ↓</a></div>
+  </div>
+  <div class="visual">
+   <div class="portrait"><img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=1000&q=85" alt="Modern salon interior"></div>
+   <div class="float-card"><b>4.9/5</b><small>Highly rated by our local salon community.</small></div>
+   <div class="badge"><div><strong>Since</strong> Ristana's<br>Family Salon<br>& Academy</div></div>
+  </div>
+ </div>
+</header>
+
+<section id="services" class="services">
+ <div class="wrap">
+  <div class="section-head reveal"><div><div class="kicker">Signature services</div><h2>Made for your<br>everyday glow.</h2></div><p>Thoughtful beauty services for women, men and families — delivered with a polished, personal touch.</p></div>
+  <div class="cards">
+   <article class="card reveal"><div class="circle"></div><div class="num">01 / HAIR</div><h3>Cut & Style</h3><p>Fresh cuts, styling, blowouts and occasion-ready looks tailored to you.</p></article>
+   <article class="card reveal"><div class="circle"></div><div class="num">02 / BEAUTY</div><h3>Makeup</h3><p>Elegant beauty looks for celebrations, photos, events and special moments.</p></article>
+   <article class="card reveal"><div class="circle"></div><div class="num">03 / CARE</div><h3>Skin & Spa</h3><p>Relaxing care rituals designed to leave you refreshed, confident and radiant.</p></article>
+   <article class="card reveal"><div class="circle"></div><div class="num">04 / GROOMING</div><h3>Family Care</h3><p>Professional grooming services in a comfortable, welcoming environment.</p></article>
+  </div>
+ </div>
+</section>
+
+<section id="experience" class="experience">
+ <div class="wrap">
+  <div class="section-head reveal"><div><div class="kicker">The experience</div><h2>Beauty feels<br>better here.</h2></div><p>Clean design, warm hospitality and detail-focused service come together for a salon visit that feels elevated without feeling intimidating.</p></div>
+  <div class="experience-grid">
+   <div class="experience-card reveal"><img src="https://images.unsplash.com/photo-1521590832167-7bcbfaa6381f?auto=format&fit=crop&w=1000&q=85" alt="Hair styling"><div class="exp-copy"><h3>Personal style, elevated.</h3><p>Tell us the look. We'll help you make it yours.</p></div></div>
+   <div class="stats">
+    <div class="stat reveal"><strong>4.9</strong><span>Local rating</span></div>
+    <div class="stat reveal"><strong>39+</strong><span>Customer reviews</span></div>
+    <div class="stat reveal"><strong>7</strong><span>Days a week</span></div>
+    <div class="stat reveal"><strong>9–8</strong><span>Daily opening hours</span></div>
+   </div>
+  </div>
+ </div>
+</section>
+
+<section id="academy" class="academy">
+ <div class="wrap academy-grid">
+  <div class="academy-photo reveal"><img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?auto=format&fit=crop&w=900&q=85" alt="Beauty professional"></div>
+  <div class="reveal"><div class="kicker">Ristana's Academy</div><h2>Learn the craft.<br>Build your future.</h2><p class="lead">A dedicated learning side of the brand for aspiring beauty professionals who want practical skills, confidence and a stronger foundation.</p>
+   <div class="check"><b>✓</b><span>Practical, beauty-industry focused learning</span></div>
+   <div class="check"><b>✓</b><span>Guidance from experienced professionals</span></div>
+   <div class="check"><b>✓</b><span>Build skills for a career in beauty</span></div>
+   <a class="btn btn-dark" href="tel:+917002837300" style="margin-top:18px">Ask About Courses ↗</a>
+  </div>
+ </div>
+</section>
+
+<section id="contact" class="contact">
+ <div class="wrap">
+  <div class="contact-box reveal">
+   <div><div class="kicker">Come say hello</div><h2>Ready for your next look?</h2><p>Call the salon to check availability, ask about services or plan your appointment.</p>
+    <div class="info"><a href="tel:+917002837300">+91 70028 37300</a><span>Assam Trunk Rd, Dadhora Ahom Gaon, Bongal Gaon, Assam 785614</span><span>Open daily · 9:00 AM – 8:00 PM</span></div>
+   </div>
+   <form class="contact-form" onsubmit="event.preventDefault(); alert('Thanks! Please call +91 70028 37300 to confirm your appointment.');">
+    <input required placeholder="Your name"><input required type="tel" placeholder="Phone number"><textarea placeholder="What service are you looking for?"></textarea><button class="btn btn-dark" type="submit">Request Appointment ↗</button>
+   </form>
+  </div>
+ </div>
+</section>
+
+<footer><div class="footer-wrap"><strong>Ristana's Family Salon & Academy</strong><span>© 2026 · Crafted for a modern beauty experience.</span></div></footer>
+<script>
+const observer=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('show')}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>observer.observe(el));
+</script>
+</body>
+</html>
